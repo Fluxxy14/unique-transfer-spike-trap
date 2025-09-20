@@ -8,7 +8,8 @@ A smart contract "trap" deployed on Sepolia Testnet that restricts suspicious wa
 - Etherscan: https://sepolia.etherscan.io/address/0x16CaE024638e1109707Aa02857EE4D9f1D223Df2#code
 
 ## What it does
-Blocks transfers that are too small (< 0.01 ETH) or too large (> 5 ETH). Safe transfers between 0.01 and 5 ETH succeed.
+Blocks transfers that are too small (< 0.01 ETH) or too large (> 5 ETH). Safe transfers between 0.01 and 5 ETH succeed(This allows for prevention of micro spam txns to stop wallet drainers from
+removing a large amount of money in quick chain of events adding a line of defence)
 
 ## Files
 - `src/TransferSpikeTrap.sol` — contract source
